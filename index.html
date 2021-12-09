@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple quiz 2</title>
+    <style>
+
+        .container {
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 60%;
+            padding: 20px;
+            background-color: lightblue;
+            display: none;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form name="myform">
+        Q1 Fav colour of mine(not according to you) ?<br>
+        <input type="radio" name="q1" value="a">blue<br>
+        <input type="radio" name="q1"value="b">green<br>
+        <input type="radio" name="q1" value="c">black<br>
+        <input type="radio" name="q1" value="d">pink<br>
+        <input type="button" value="submit"  onclick="result()">
+    </form>
+<script>
+  function result(){
+    var count=0;
+    var q1=document.myform.q1.value;
+    if (q1=="c"){
+        alert("Hey preety girl,Happiest Birthday🎈🎁 on this day God has gifted me the best person👩🏼‍🤝‍👩🏼 ever who became as my best friend🤞 & is always by my side💖😍.")
+    }
+    else{
+      alert("oops  wrong ans try again!! ")
+    }
+
+  }
+
+</script>
+</<body>
+</html>
